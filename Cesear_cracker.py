@@ -1,10 +1,6 @@
 from Cesear import caesar_crypto_encode
 import string
 
-
-
-
-
 count=0
 enc_dict={}
 
@@ -23,9 +19,6 @@ for i in encoded_string:
         elif i not in enc_dict.keys():
             enc_dict[i]=1
 
-
-
-
 #initializes the variables used for getting top 3 letters and their frequencies
 
 for key, value in enc_dict.items():
@@ -42,15 +35,10 @@ for key,values in enc_dict.items():
 suspect_shift=0
 #trys to find the shift
 
-
-
 for key, value in eng_letter_freq_dict.items():
 
    if float(value) < (float(max_freq[0])*1.10) and float(value) > (float(max_freq[0])*.90):
         suspect_shift = int(alpha_index[max_freq[1]]) - int(alpha_index['e'])
-
-        #elif suspect_shift == int(alpha_index[max_freq_2[1]]) - int(alpha_index['o']):
-        #    print("Another one this one O though")
 
 
 print("The suspected shift is  "+str(suspect_shift))
