@@ -19,7 +19,7 @@ for i in encoded_string:
         elif i not in enc_dict.keys():
             enc_dict[i]=1
 
-#initializes the variables used for getting top 3 letters and their frequencies
+
 
 for key, value in enc_dict.items():
     #converts the number of occurences to a percentage of occurences
